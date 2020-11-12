@@ -18,7 +18,7 @@ class JdbcConfiguration {
 
     @Bean
     @Qualifier("vzapertiDataSource")
-    fun siebelDataSource(jdbcProperties: JdbcProperties) =
+    fun vzapertiDataSource(jdbcProperties: JdbcProperties) =
             HikariDataSource(jdbcProperties)
 
     @Bean
